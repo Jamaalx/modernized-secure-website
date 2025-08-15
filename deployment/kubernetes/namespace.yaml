@@ -1,0 +1,17 @@
+# Kubernetes Namespace Configuration
+# Secure Documents Platform - Production Deployment
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: secure-docs
+  labels:
+    name: secure-docs
+    environment: production
+    app: secure-documents-platform
+    version: "2.0.0"
+  annotations:
+    description: "Secure Documents Platform - Production Environment"
+    contact: "devops@yourdomain.com"
+    created-by: "kubernetes-deployment"
+

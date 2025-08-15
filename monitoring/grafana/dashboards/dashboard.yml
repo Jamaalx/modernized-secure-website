@@ -1,0 +1,16 @@
+# Grafana Dashboard Provisioning Configuration
+# Automatic loading of dashboards for Secure Documents Platform
+
+apiVersion: 1
+
+providers:
+  - name: 'secure-docs-dashboards'
+    orgId: 1
+    folder: 'Secure Documents'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards
+
